@@ -1,0 +1,71 @@
+.home-wrap{
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(237,67,67,.7)), url('../../../assets/mars-background-wallpaper.jpg');
+  background-position-x: 47%;
+  background-position-y: 33%;
+  font-size: 18px;
+  height: 100vh;
+}
+
+h1, h2{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  text-align: center;
+}
+h1{
+  font-size: 2.5rem;
+  padding-top: 12vh;
+  text-transform: uppercase;
+}
+h2{
+  font-size: 2rem;
+  padding-top: 35vh;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+.animate{
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: pulse;
+  animation-timing-function: linear;
+  background: rgba(237,237,237,.2);
+  border-radius: 50%;
+  height: 75px;
+  margin-top: 25vh;
+  opacity: 0.4;
+  width: 75px;
+  //Box Shadow
+  box-shadow: 0 0 0 25px rgba(255,255,255,0.1),
+              0 0 0 50px rgba(255,255,255,0.1),
+              0 0 0 75px rgba(255,255,255,0.1),              
+}
+
+@keyframes pulse{
+  0%{
+  box-shadow: 0 0 0 25px rgba(255,255,255,0.4),
+              0 0 0 50px rgba(255,255,255,0.4),
+              0 0 0 75px rgba(255,255,255,0.4);
+  opacity: 0;
+    }
+  33% {
+    box-shadow: 0 0 0 25px rgba(255,255,255,0.3),
+                0 0 0 50px rgba(255,255,255,0.2),
+                0 0 0 75px rgba(255,255,255,0.00);
+    opacity: 0.1;
+  }
+  66% {
+  box-shadow: 0 0 0 25px rgba(255,255,255,0.02),
+              0 0 0 50px rgba(255,255,255,0.00),
+              0 0 0 75px rgba(255,255,255,0.00);
+  opacity: 0.2;
+  }
+  100%{
+  box-shadow: 0 0 0 25px rgba(255,255,255,0.00),
+              0 0 0 50px rgba(255,255,255,0.00),
+              0 0 0 75px rgba(255,255,255,0.00);
+  opacity: 0.3;
+  }
+}

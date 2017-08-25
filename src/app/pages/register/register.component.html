@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <h1>Register</h1>
+  <form [formGroup]="this.registerForm" (ngSubmit)="postColonist($event)">
+    <fieldset>
+      <input type="text" placeholder="Name" formControlName="colName" required/>
+      <input type="number" placeholder="Age" formControlName="colAge" required/>
+      <select formControlName="colJob" required>
+        <option [value]="NO_JOB_SELECTED" selected>Select occupation</option>
+        <option *ngFor="let job of listJobs" [value]="job.id">
+          {{job.name}}
+        </option>
+      </select>
+    </fieldset>
+    <div class="flex-wrap">
+      <button [disabled]="registerForm.invalid" class="check-in" type="submit">Check in</button>
+    </div>
+  </form>
+</div>

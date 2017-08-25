@@ -1,0 +1,18 @@
+<div class="report-wrap">
+  <h1>Report an Encounter</h1>
+  <h2>Safety on Mars is your repsonsibility</h2>
+  <form class="report-form" [formGroup]="this.reportForm" (ngSubmit)="postReport($event)">
+    <fieldset>
+      <select formControlName="repAtype" required>
+        <option [value]="NO_SELECTION" selected>Select an alien type</option>
+        <option *ngFor="let alien of listAliens" [value]="alien.id">
+          {{alien.type}}
+        </option>
+      </select>
+      <textarea class="action-taken" placeholder="Action taken" formControlName="repAct" required></textarea>
+    </fieldset>
+    <div class="btn-wrap">
+      <button [disabled]="reportForm.invalid" class="submit-report" type="submit">Submit Report</button>
+    </div>
+  </form>
+</div>

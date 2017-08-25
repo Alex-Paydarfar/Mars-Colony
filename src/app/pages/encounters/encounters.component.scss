@@ -1,0 +1,70 @@
+li{
+  p{
+    margin-bottom: 1rem;
+  }
+  span{
+    display:block;
+  }
+}
+a{
+  text-decoration: none;
+}
+h1, h2, .report{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  text-align: center;
+}
+h1{
+  font-size: 2rem;
+  padding-top: 2.5rem;
+}
+h2{
+  padding-bottom: 1.5rem;
+}
+
+li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  p{
+    font-size: 1.2rem;
+  }
+}
+
+.encounters-page {
+  background: white;
+}
+
+.report {
+  background: black;
+  bottom: 0;
+  display: flex;
+  height: 25vh;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  a {
+    align-self: center;
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+.blog-icon{
+  background-image:url('../../../assets/mars-main-icon.png');
+  background-size: cover;
+  top: 0;
+  padding: 3rem 0.5rem;
+  position: absolute;
+  right: 1.5rem;
+  width: 4.5rem;
+  a{
+    color: orange;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    position: absolute;
+    right: 1.3rem;
+    top: 2.8rem;
+  }
+}

@@ -1,0 +1,82 @@
+$color-mars: #ed4343;
+
+.report-wrap{
+  background: black;
+  height: 100vh;
+  width: 100%;
+}
+
+h1, h2, .submit-report{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  text-align: center;
+}
+h1, .submit-report{
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+h2{
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.btn-wrap {
+  background: black;
+  bottom: 0;
+  display: flex;
+  height: 42vh;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  .submit-report {
+    font-size: 2rem;
+    text-decoration: none;
+  }
+}
+
+//Field Styles
+fieldset{
+  color: $color-mars;
+  margin-top: 0.5rem;
+  textarea, select {
+    border-bottom: 1px solid white;
+    display: block;
+    font-size: 1.2rem;
+    height: 2rem;
+    margin: 0.9rem 5%;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    &:focus{
+      outline: none;
+    }
+  }
+  .action-taken{
+    background: white;
+    font-size: 1.4rem;
+    height: 12rem;
+      &::placeholder{
+      background: white;
+    }
+  }
+}
+select option, select, textarea::placeholder{
+  background: black;
+  border: none;
+  color: $color-mars;
+}
+
+// Remove Arrow
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+select::-ms-expand {
+    display: none;
+}
+
+.submit-report{
+  background: black;
+  border: none;
+}
