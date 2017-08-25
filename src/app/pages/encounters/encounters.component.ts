@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Encounter } from '../../models/encounter';
 import { EncountersService } from '../../services/encounters.service';
-// List of Encounters
 
 @Component({
   selector: 'app-encounters',

@@ -10,7 +10,7 @@ export class BlogService {
   constructor(private http: Http) { }
 
   getData() {
-    // Perform Async request
+
     const data = this.http.get(this.URL_BLOG)
       .map(this.extractEntry)
       .map(this.simplifyEntry);
@@ -18,7 +18,6 @@ export class BlogService {
   }
 
   extractEntry(res: Response) {
-    // Parse JSON to return an array of JS Objects
     const posts = res.json();
     return posts;
   }
@@ -26,7 +25,7 @@ export class BlogService {
   simplifyEntry(posts) {
     const simplePosts = [];
     let simplePost;
-    // Choose what data you want to pull from the WP REST API
+    
     for (const post of posts) {
       simplePost = {
         content: post.content.rendered,
@@ -36,9 +35,6 @@ export class BlogService {
       simplePosts.push(simplePost);
     }
 
-    /* Returns only the information required for our use-case -
-      be sure to modify the interface at models/post.ts if the
-      use-case changes here. */
     return simplePosts;
   }
 }

@@ -12,7 +12,6 @@ import {
   ValidatorFn,
   AbstractControl
 } from '@angular/forms';
-// Report an Encounter
 
 const cantBe = (value: string): ValidatorFn => {
     return (control: AbstractControl) => {

@@ -35,7 +35,6 @@ h2{
   }
 }
 
-//Field Styles
 fieldset{
   color: $color-mars;
   margin-top: 0.5rem;
@@ -67,7 +66,6 @@ select option, select, textarea::placeholder{
   color: $color-mars;
 }
 
-// Remove Arrow
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
