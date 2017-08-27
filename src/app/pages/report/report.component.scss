@@ -1,4 +1,4 @@
-$color-mars: #ed4343;
+
 
 .report-wrap{
   background: black;
@@ -21,20 +21,6 @@ h2{
   padding-bottom: 2rem;
 }
 
-.btn-wrap {
-  background: black;
-  bottom: 0;
-  display: flex;
-  height: 42vh;
-  justify-content: center;
-  position: fixed;
-  width: 100%;
-  .submit-report {
-    font-size: 2rem;
-    text-decoration: none;
-  }
-}
-
 fieldset{
   color: $color-mars;
   margin-top: 0.5rem;
@@ -51,30 +37,18 @@ fieldset{
       outline: none;
     }
   }
-  .action-taken{
-    background: white;
-    font-size: 1.4rem;
-    height: 12rem;
-      &::placeholder{
-      background: white;
+  .btn-wrap {
+    height: 45vh;
+    background: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    .submit-report {
+      font-size: 1.5rem;
+      text-decoration: none;
     }
   }
-}
-select option, select, textarea::placeholder{
-  background: black;
-  border: none;
-  color: $color-mars;
-}
-
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-select::-ms-expand {
-    display: none;
-}
-
-.submit-report{
-  background: black;
-  border: none;
+  $color-mars: #ed4343;
 }

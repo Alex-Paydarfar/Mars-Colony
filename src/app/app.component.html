@@ -1,1 +1,11 @@
-<router-outlet></router-outlet>
+<div [@routerTransition]="getState(o)">
+  <router-outlet #o="outlet"></router-outlet>
+</div>
+
+<!-- <section>
+<p routerLink="/">Home</p>
+<p routerLink="/register">Register</p>
+<p routerLink="/encounters">Encounters</p>
+<p routerLink"/report">Report</p>
+
+</section> -->

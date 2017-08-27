@@ -1,6 +1,5 @@
 <div class="report-wrap">
   <h1>Report an Encounter</h1>
-  <h2>Safety on Mars is your repsonsibility</h2>
   <form class="report-form" [formGroup]="this.reportForm" (ngSubmit)="postReport($event)">
     <fieldset>
       <select formControlName="repAtype" required>
@@ -12,7 +11,7 @@
       <textarea class="action-taken" placeholder="Action taken" formControlName="repAct" required></textarea>
     </fieldset>
     <div class="btn-wrap">
-      <button [disabled]="reportForm.invalid" class="submit-report" type="submit">Submit Report</button>
+      <button [disabled]="reportForm.invalid" class="submit-report" type="submit">Submit A Report</button>
     </div>
   </form>
 </div>

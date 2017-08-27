@@ -8,7 +8,6 @@ import { Colonist } from '../models/colonist';
 export class ColonistService {
 
   private URL_COLONISTS = 'https://red-wdp-api.herokuapp.com/api/mars/colonists';
-
   constructor(private http: Http) { }
 
   postData(colonist: Colonist) {

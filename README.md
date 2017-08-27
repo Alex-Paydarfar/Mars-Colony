@@ -12,8 +12,7 @@ This project was built using Angular.js  framework
 * Improved debugging tools abilities to referring to the docs regarding various errors while working on this project
 * Using postman application to extract information from an API
 * Better understanding of git and github VCS
+* learned the basics of using Angular2 framework
 
 
-## Contributor
 
-Alex Paydarfar
