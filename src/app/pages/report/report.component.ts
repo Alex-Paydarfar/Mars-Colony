@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Alien } from '../../models/alien'; // GET
+import { Alien } from '../../models/alien'; 
 import { AlienService } from '../../services/alien.service';
 import { RouterModule, Routes, Router } from '@angular/router';
-import { Report } from '../../models/report'; //POST
+import { Report } from '../../models/report'; 
 import { ReportService } from '../../services/report.service';
 import {
   FormGroup,
@@ -67,7 +67,7 @@ export class ReportComponent implements OnInit {
     this.reportService
         .postData(report)
         .subscribe((newReport) => {
-            console.log('Your report has been successfully submitted!', newReport);
+            console.log('Report has been submitted!', newReport);
             this.router.navigate (['/encounters']);
         });
   }
